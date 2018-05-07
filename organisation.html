@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="guest/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header style="width:100%; background-image: url('https://placeimg.com/800/400/people');background-size: cover;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand mr-auto" href="#">
+            <img src="https://donor.spb.ru/web/images/logo_daydonor.jpg" width="45" height="45"
+                 class="d-inline-block align-center" alt="Логотип системы">
+            Donor System
+        </a>
+        <div class="collapse navbar-collapse ml-2">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Личный кабинет</a> <!-- Только у авторизованного человека -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="orgDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Организации
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="orgDropdown">
+                        <!-- foreach для доставания данных из модели-->
+                        <a class="dropdown-item" href="#">Больница 1</a>
+                        <a class="dropdown-item" href="#">Больница 1</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="#"><i class="fab fa-vk"></i></a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="row mt-4 border-bottom">
+        <div class="col-md-9">
+            <h2 class="display-4">
+                Организация 1
+            </h2>
+        </div>
+        <div class="col-md-3 mt-3 rang" id="orgRang">
+            <h2 class="display-5">
+                Рейтинг
+            </h2>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <p>Описание деятельности и прочее Описание деятельности и прочее Описание деятельности и прочее Описание деятельности и прочее Описание деятельности и прочее</p>
+        </div>
+        <div class="col-md-6">
+            Фото и прочее
+        </div>
+    </div>
+    <section class="contacts">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="display-5">Контактные данные</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <label for="orgPhone">Телефон:</label><span class="ml-2" id="orgPhone">555-35-35</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="orgAddress">Адрес:</label><span class="ml-2" id="orgAddress">ул. Улица дом Дом</span>
+            </div>
+        </div>
+    </section>
+    <div class="row map">
+        <div class="col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.6683264124194!2d30.34371614355797!3d59.9930812786157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696338d5d9cc901%3A0x67f295952baaf13e!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LPRgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0LvQtdGB0L7RgtC10YXQvdC40YfQtdGB0LrQuNC5INGD0L3QuNCy0LXRgNGB0LjRgtC10YIg0LjQvNC10L3QuCDQoS7QnC4g0JrQuNGA0L7QstCw!5e0!3m2!1sru!2sru!4v1525701586988" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer>
+    <div class="container border-top border-danger">
+        <div class="row">
+            <div class="col-12 col-md-2 ml-5 mt-3">
+                <div class="card border-danger">
+                    <div class="card-header">
+                        <p class="map-header">Карта сайта</p>
+                    </div>
+                    <div class="card-body">
+                        <nav class="nav flex-column">
+                            <a class="nav-link active" href="#">Главная</a>
+                            <a class="nav-link" href="#">Организации</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Остальное</h4>
+                    </div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
