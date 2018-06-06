@@ -1,7 +1,7 @@
 
 # donor-webui
-## [`guest/`](guest/) - вид страниц для гостей
- -  [`guest/index.html`](guest/index.html) - главная страница
+## [`guest/`](dev/guest/) - вид страниц для гостей
+ -  [`guest/index.html`](dev/guest/index.html) - главная страница
 
 ## [`donor/`](donor/) - вид для доноров
 

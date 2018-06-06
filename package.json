@@ -1,0 +1,28 @@
+{
+  "name": "donor",
+  "version": "1.0.0",
+  "description": "UI for donorsystem",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-clean-css": "^3.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashuleka01/donor.git"
+  },
+  "author": "Aleksey Ivanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashuleka01/donor/issues"
+  },
+  "homepage": "https://github.com/dashuleka01/donor#readme",
+  "devDependencies": {
+    "gulp-rigger": "^0.5.8"
+  }
+}

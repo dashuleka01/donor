@@ -35,106 +35,18 @@
                         Организации
                     </a>
                     <div class="dropdown-menu" aria-labelledby="orgDropdown">
-                        <!-- foreach для доставания данных из модели-->
+                        <!-- foreach для доставания данных из модели -->
                         <a class="dropdown-item" href="#">Больница 1</a>
                         <a class="dropdown-item" href="#">Больница 1</a>
                     </div>
                 </li>
             </ul>
         </div>
+        <a class="navbar-brand" href="#">Выход</a> <!-- Только у авторизованного человека -->
         <a class="navbar-brand" href="#"><i class="fab fa-vk"></i></a>
     </nav>
 </header>
-<div class="container">
-    <div class="row">
 
-        <main class="col-12 col-md-9 mt-4 ml-3">
-            <div class="col-md-9 border-bottom">
-                <h2 class="display-4">Личный кабинет</h2>
-                <p class="lead">Здесь Вы можете просмотреть и поменять информацию о себе </p>
-            </div>
-            <div class="container">
-
-                <div class="row mt-4">
-                    <div class="col-12 col-md-6">
-                        <p>Дата сдачи: <span class="nearestdonation-date">27.05.2018</span></p>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <button>Выбрать</button>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-12 col-md-6">
-                        <p>Количество кроводач: <span class="ml-2" id="donation-counter">5</span></p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <p>Последняя дата кроводачи: <span class="ml-2" id="lastdonation-date">21.09.2017</span></p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <a class="btn btn-primary" data-toggle="collapse" href="#personal-info" role="button" aria-expanded="false" aria-controls="personal-info ">Редактировать информацию</a>
-                    </div>
-                </div>
-                <p>
-
-                </p>
-
-                <div class="collapse multi-collapse card card-body mt-5 mb-5" id="personal-info">
-                    <form>
-                        <div class="row" id="personal">
-                            <div class="col-md-3">
-                                <p>Фамилия</p>
-                            </div>
-                            <div class="col-md-3">
-                                <input name="surname">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p>Имя</p>
-                            </div>
-                            <div class="col-md-6">
-                                <input name="firstname">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p>Отчество</p>
-                            </div>
-                            <div class="col-md-6">
-                                <input name="patronymic">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p>Номер паспорта</p>
-                            </div>
-                            <div class="col-md-6">
-                                <input name="passport">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <p>ИНН</p>
-                            </div>
-                            <div class="col-md-6">
-                                <input name="INN">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-
-            </div>
-        </main>
-    </div>
-</div>
 
 </body>
 <footer>
