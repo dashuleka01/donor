@@ -28,3 +28,5 @@ gulp.task('watcher', function () {
     //gulp.watch([paths.img], ['img_minify']);
     gulp.watch([paths.css], ['html_builder']);
 });
+
+gulp.task('build',['css_minify', 'html_builder']);
