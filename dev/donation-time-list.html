@@ -1,0 +1,68 @@
+//= templates/admin-header.html
+
+<main class="col-12 col-md-9 col-xl-8" role="main">
+    <div class="jumbotron">
+        <h1 class="display-4">Списки сдачи</h1>
+        <p class="lead">Здесь вы можете создать или отредактировать имеющийся список.</p>
+    </div>
+
+    <table class="table table-striped table-bordered table-sm table-responsive-md">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Дата</th>
+                <th scope="col">Время</th>
+                <th scope="col">Количество человек</th>
+                <th scope="col">Функции</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>11.08.2018</td>
+                <td>10:00</td>
+                <td>25</td>
+                <td><i title="Изменить" class="fas fa-edit edit" id="edit-01"></i>
+                    <i title="Удалить" class="fas fa-trash-alt delete" id="delete-01"></i>
+                    <i title="Просмотреть" class="fas fa-eye look" id="look-01"></i></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>11.08.2018</td>
+                <td>11:00</td>
+                <td>10</td>
+                <td><i title="Изменить" class="fas fa-edit edit" id="edit-02"></i>
+                    <i title="Удалить" class="fas fa-trash-alt delete" id="delete-02"></i>
+                    <i title="Просмотреть" class="fas fa-eye look" id="look-02"></i></td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>12.08.2018</td>
+                <td>10:00</td>
+                <td>22</td>
+                <td><i title="Изменить" class="fas fa-edit edit" id="edit-03"></i>
+                    <i title="Удалить" class="fas fa-trash-alt delete" id="delete-03"></i>
+                    <i title="Просмотреть" class="fas fa-eye look" id="look-03"></i></td>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <form>
+                    <td><input name="date" value="datepicker"></td>
+                    <td><input name="time" value="clockpicker"></td>
+                    <td><input name="donor-quantity"></td>
+                </form>
+                <td>
+                    <button class="btn">
+                        Создать
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+</div>
+</div>
+</body>
+</html>
